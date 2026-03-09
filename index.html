@@ -7,20 +7,23 @@
     <title>Programa Renova — Elimine os 3 Invasores</title>
     <!-- Facebook Pixel -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '830811864580874');
-    fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '830811864580874');
+        fbq('track', 'PageView');
     </script>
     <noscript>
         <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=830811864580874&ev=PageView&noscript=1"/>
+            src="https://www.facebook.com/tr?id=830811864580874&ev=PageView&noscript=1" />
     </noscript>
     <!-- Fim Facebook Pixel -->
 
@@ -716,6 +719,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            text-align: left;
         }
 
         .ba-list li {
@@ -724,6 +728,7 @@
             gap: 10px;
             font-size: .93rem;
             line-height: 1.55;
+            flex: 1;
         }
 
         .ba-col.bad .ba-list li {
@@ -1211,6 +1216,15 @@
             margin-bottom: 6px;
         }
 
+        .price-urgency {
+            font-size: .85rem;
+            color: rgba(255, 255, 255, .55);
+            text-align: center;
+            margin-top: 12px;
+            font-style: italic;
+            letter-spacing: 0.02em;
+        }
+
         .price-new {
             font-family: var(--serif);
             font-size: 4.8rem;
@@ -1574,7 +1588,7 @@
     <!-- NAV -->
     <nav>
         <img src="assets/logo-renova.png" alt="Programa Renova" style="height: 40px;">
-        <a href="#oferta" class="nav-cta">Garantir vaga →</a>
+        <a href="#oferta" class="nav-cta">Transformar meu corpo →</a>
     </nav>
 
     <!-- ══ HERO ══ -->
@@ -1592,7 +1606,7 @@
                 Parasitas &nbsp;·&nbsp; Toxinas &nbsp;·&nbsp; Inflamação
             </div>
             <div class="hero-cta-wrap">
-                <a href="#oferta" class="btn">Quero eliminar os 3 invasores →</a>
+                <a href="#oferta" class="btn">Quero Transformar →</a>
             </div>
             <p class="hero-proof">Acesso imediato · <em>7 dias de garantia</em> · Suporte incluso</p>
         </div>
@@ -1629,7 +1643,7 @@
     <section id="crenca">
         <div class="inner-narrow">
             <span class="s-label r">A verdade que ninguém te contou</span>
-            <h2 class="display r d1">Você não está <em>fraca.</em><br>Você está <em>intoxicada.</em></h2>
+            <h2 class="display r d1">Você não está <em>fraca.</em><br>Você está <em>Enflamada.</em></h2>
             <p class="lead r d2">
                 Você já tentou dieta. Já tomou vitaminas. Já fez exames.<br><br>
                 Mas ninguém te explicou o que está acontecendo de verdade dentro do seu corpo — e por que nenhuma
@@ -1677,18 +1691,18 @@
                 <div class="ba-col bad r">
                     <p class="ba-col-label">❌ Sem tratamento</p>
                     <ul class="ba-list">
-                        <li><span class="ic">—</span> Cansaço que não passa nem dormindo</li>
-                        <li><span class="ic">—</span> Barriga inchada sem motivo aparente</li>
-                        <li><span class="ic">—</span> Intestino preso ou irregular</li>
-                        <li><span class="ic">—</span> Névoa mental e falta de foco</li>
-                        <li><span class="ic">—</span> Humor instável e irritabilidade</li>
-                        <li><span class="ic">—</span> Nada funciona por mais que você tente</li>
+                        <li><span class="ic">—</span> Cansaço extremo e fadiga persistente</li>
+                        <li><span class="ic">—</span> Problemas digestivos recorrentes (constipação, inchaço)</li>
+                        <li><span class="ic">—</span> Medo de não conseguir dar conta</li>
+                        <li><span class="ic">—</span> Ansiedade constante sobre a saúde e o futuro</li>
+                        <li><span class="ic">—</span> Sente que algo está faltando, mas não sabe o que é</li>
+                        <li><span class="ic">—</span> Desconexão com a própria essência e identidade</li>
                     </ul>
                 </div>
                 <div class="ba-col good r d1">
                     <p class="ba-col-label">✦ Com Programa Renova</p>
                     <ul class="ba-list">
-                        <li><span class="ic">✓</span> Energia real do início ao fim do dia</li>
+                        <li><span class="ic">✓</span> Energia renovada</li>
                         <li><span class="ic">✓</span> Corpo leve, barriga desinchada</li>
                         <li><span class="ic">✓</span> Intestino regulado e funcionando</li>
                         <li><span class="ic">✓</span> Clareza mental de volta</li>
@@ -1729,7 +1743,7 @@
             <h2 class="display r d1">O Programa Renova foi<br>criado para tratar <em>a raiz.</em></h2>
             <p class="lead lead-light r d2">Um protocolo estruturado para limpar, restaurar e reativar seu corpo.<br>Sem
                 extremismos. Sem terrorismo alimentar. Sem soluções superficiais.</p>
-            <a href="#oferta" class="btn r d3">Quero renovar meu corpo →</a>
+            <a href="#oferta" class="btn r d3">Quero transformar meu corpo →</a>
         </div>
     </section>
 
@@ -1743,9 +1757,10 @@
                 <div class="recebe-card r">
                     <div class="rc-icon">📋</div>
                     <p class="rc-title">Método completo</p>
-                    <p class="rc-desc">Protocolo passo a passo da desparecitação até a desentoxicação. Sem improviso.
+                    <p class="rc-desc">Protocolo passo a passo da Desparasitação, Detoxificação a Desinflamação. Sem
+                        improviso.
                     </p>
-                    <p class="rc-val">Valor: R$ 500</p>
+                    <p class="rc-val">Valor: R$ 521</p>
                 </div>
                 <div class="recebe-card r d1">
                     <div class="rc-icon">🤝</div>
@@ -1787,18 +1802,19 @@
             <span class="s-label s-label-light r">Quem vai guiar sua transformação</span>
             <div class="expert-img-wrap r d1">
                 <span class="etag">Expert · Wanda</span>
-                <img src="/assets/wanda-expert.jpg" alt="Wanda, criadora do Programa Renova" />
+                <img src="/assets/wanda-expert-2.jpeg" alt="Wanda, criadora do Programa Renova" />
             </div>
             <h2 class="mid r d2">Um método que nasceu<br>da <em>prática real,</em><br>não da teoria.</h2>
             <p class="lead r d3" style="color:rgba(255,255,255,.5)">
-                Especialista em saúde integrativa feminina, Wanda desenvolveu o Programa Renova depois de anos
-                identificando os mesmos padrões em mulheres que "já tentaram tudo". A resposta estava sempre nos mesmos
-                três invasores — e no protocolo certo para eliminá-los juntos.
+                Wanda é Terapeuta Naturopata, especialista em saúde integrativa feminina, foco de desinflamação do
+                corpo. Com abordagem personalizada , Ortomolecular, Suplementação, fitoterapia Avançada criou o Programa
+                RENOVA, um protocolo de saúde natural para desintoxicar, desparasitar e desinflamar o corpo das toxinas
+                e metais pesados que o nosso estilo de vida do mundo moderno atual nos impõe.
             </p>
             <div class="stats-grid r">
                 <div class="stat">
-                    <div class="stat-num">7+</div>
-                    <div class="stat-label">Anos de atuação</div>
+                    <div class="stat-num">15 dias</div>
+                    <div class="stat-label">Primeiros resultados</div>
                 </div>
                 <div class="stat">
                     <div class="stat-num">80+</div>
@@ -1874,10 +1890,10 @@
     <section id="oferta" class="bg-ink">
         <div class="inner-narrow">
             <span class="s-label s-label-light r">Condição exclusiva de lançamento</span>
-            <h2 class="display r d1">Invista na sua<br><em>renovação.</em></h2>
+            <h2 class="display r d1">Invista na sua<br><em>renovação de saúde.</em></h2>
             <div class="price-box r d2">
                 <ul class="price-items">
-                    <li><strong>Método completo estruturado</strong> <span class="val">R$ 500</span></li>
+                    <li><strong>Método completo estruturado</strong> <span class="val">R$ 521</span></li>
                     <li><strong>Suporte 1×1</strong> <span class="val">R$ 200</span></li>
                     <li><strong>Ao vivo mensal com Wanda</strong> <span class="val">R$ 180</span></li>
                     <li><strong>Tabela de manipulados</strong> <span class="val">R$ 150</span></li>
@@ -1885,25 +1901,27 @@
                     <li><strong>Monitoramento</strong> <span class="val">R$ 300</span></li>
                 </ul>
                 <div class="price-total">
-                    <p class="price-old">De R$ 1447,00</p>
-                    <p class="price-new"><sup>R$</sup>398</p>
-                    <span class="price-save">Você economiza R$ 1.049 · 72,49% off</span>
-                    <p class="price-parcel">ou 10× de R$ 47,83 no cartão </p>
+                    <p class="price-urgency">⚡ Oferta especial para as 10 primeiras vagas R$ 395,00 — após isso o valor volta a R$
+                        1.448,00</p>
+                    <p class="price-old">De R$ 1448,00</p>
+                    <p class="price-new"><sup>R$</sup>395</p>
+                    <span class="price-save">Você economiza R$ 1.053 · 72,49% off</span>
+                    <p class="price-parcel">ou 10× de R$ 47,47 no cartão </p>
                     <a href="https://pay.hotmart.com/P93116367D" class="btn" target="_blank"
-                        style="display:block;text-align:center;">Sim, quero garantir minha vaga →</a>
+                        style="display:block;text-align:center;">Quero garantir minha transformação →</a>
                 </div>
             </div>
-            <p class="oferta-note r">Condição válida apenas por poucos dias. Após o lançamento, o valor aumenta.</p>
+            <p class="oferta-note r">Condição válida apenas para os 10 primeiros. Após o lançamento, o valor aumenta.</p>
         </div>
     </section>
 
     <!-- ══ URGÊNCIA ══ -->
     <section id="urgencia">
         <div class="inner-narrow" style="position:relative;z-index:2;">
-            <h2 class="r">Essa oferta<br>não vai <em>durar.</em></h2>
+            <h2 class="r">É sério, essa oferta<br>não vai <em>durar.</em></h2>
             <p class="r d1">Ou você continua exausta, inchada, sem energia —<br>ou você decide renovar agora.<br>A
                 decisão é só sua.</p>
-            <a href="#oferta" class="btn btn-white r d2">Quero renovar agora →</a>
+            <a href="#oferta" class="btn btn-white r d2">Quero transformar meu corpo →</a>
         </div>
     </section>
 
@@ -1982,7 +2000,7 @@
         <div class="inner-narrow">
             <h2 class="r">Seu corpo não está<br>contra você.<br><em>Ele está pedindo ajuda.</em></h2>
             <p class="r d1">E agora você sabe o que ele precisa.</p>
-            <a href="#oferta" class="btn r d2">Quero começar minha renovação →</a>
+            <a href="#oferta" class="btn r d2">Quero começar minha renovação de saúde. →</a>
         </div>
     </section>
 
