@@ -856,6 +856,75 @@
             position: relative;
         }
 
+        /*PROVA REAL AVATAR - WANDA=============================================*/
+        .section-prova {
+            padding: 1px 20px;
+            /* 👈 menos espaço */
+            text-align: center;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .section-prova .section-label {
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .35);
+            margin-bottom: 16px;
+        }
+
+        .section-prova h2 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .section-prova h2 em {
+            color: #c9a96e;
+        }
+
+        .section-prova .subtitle {
+            font-size: .93rem;
+            color: rgba(255, 255, 255, .5);
+            margin-bottom: -15px;
+            line-height: 1.7;
+        }
+
+        .prova-grid {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .prova-grid img {
+            width: 48%;
+            border-radius: 10px;
+            object-fit: contain;
+            aspect-ratio: 5/4;
+            /* 👈 paisagem, combina com 1350x1080 */
+            min-height: 220px;
+        }
+
+        .prova-quote {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: rgba(255, 255, 255, .6);
+            line-height: 1.6;
+        }
+
+        .prova-author {
+            font-size: .8rem;
+            color: rgba(255, 255, 255, .3);
+            margin-top: 0px;
+        }
+
+
         /* ══════════════════════════════════════
    O QUE VOCÊ RECEBE
 ══════════════════════════════════════ */
@@ -1574,6 +1643,19 @@
                 padding: 36px 24px;
             }
         }
+
+        @media (min-width: 768px) {
+            .prova-grid {
+                gap: 4px;
+                /* 👈 bem coladas no desktop */
+                flex-wrap: nowrap;
+                /* 👈 força ficar na mesma linha */
+            }
+
+            .prova-grid img {
+                width: 31%;
+            }
+        }
     </style>
 </head>
 
@@ -1582,9 +1664,17 @@
     <!-- ANNOUNCE BAR -->
     <div id="announce">
         <span class="announce-track">
-            🟠 Lançamento com <em>72% de desconto</em> · Vagas limitadas · Oferta encerra em breve
+            🟠 Entre na lista de espera <em>30% das vagas preenchidas</em> · Vagas limitadas ·
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            🟠 Lançamento com <em>72% de desconto</em> · Vagas limitadas · Oferta encerra em breve
+            🟠 Entre na lista de espera <em>30% das vagas preenchidas</em> · Vagas limitadas ·
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            🟠 Entre na lista de espera <em>30% das vagas preenchidas</em> · Vagas limitadas ·
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            🟠 Entre na lista de espera <em>30% das vagas preenchidas</em> · Vagas limitadas ·
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            🟠 Entre na lista de espera <em>30% das vagas preenchidas</em> · Vagas limitadas ·
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            🟠 Entre na lista de espera <em>30% das vagas preenchidas</em> · Vagas limitadas ·
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span>
     </div>
@@ -1592,13 +1682,13 @@
     <!-- NAV -->
     <nav>
         <img src="assets/logo-renova.png" alt="Programa Renova" style="height: 40px;">
-        <a href="#oferta" class="nav-cta">Renovar minha saúde →</a>
+        <a href="grupo.html" class="nav-cta">Renovar minha saúde →</a>
     </nav>
 
     <!-- ══ HERO ══ -->
     <section id="hero">
         <div class="hero-inner">
-            <span class="hero-tag">🔬 Protocolo de renovação feminina</span>
+            <span class="hero-tag">encontro ao vivo dia 26/03 às 20h</span>
             <h1 class="hero-h1">
                 Existe uma razão<br>
                 pela qual você<br>
@@ -1610,15 +1700,15 @@
                 Parasitas &nbsp;·&nbsp; Toxinas &nbsp;·&nbsp; Inflamação
             </div>
             <div class="hero-cta-wrap">
-                <a href="#oferta" class="btn">Renovar minha saúde →</a>
+                <a href="grupo.html" class="btn">Renovar minha saúde →</a>
             </div>
-            <p class="hero-proof">Acesso imediato · <em>7 dias de garantia</em> · Suporte incluso</p>
+            <!-- <p class="hero-proof">Acesso imediato · <em>7 dias de garantia</em> · Suporte incluso</p> -->
         </div>
         <div class="hero-img-wrap inner-mid">
-            <img src="/assets/wanda-expert.jpg" alt="Mulher buscando renovação" />
+            <img src="/assets/wanda-expert-data-26.jpg" alt="Mulher buscando renovação" />
             <div class="hero-img-badge">
                 <div class="badge-dot"></div>
-                <p class="badge-text"><strong>Programa ativo.</strong> Vagas abertas e limitadas.</p>
+                <p class="badge-text"><strong>Encontro ao vivo dia 26/03 às 20h</strong> Acesso Gratuito!</p>
             </div>
         </div>
     </section>
@@ -1690,7 +1780,7 @@
     <section id="beforeafter">
         <div class="inner">
             <span class="s-label r">O contraste é claro</span>
-            <h2 class="mid r d1">Sem Renova <em>vs.</em> Com Renova</h2>
+            <h2 class="mid r d1">Realidade de muitas mulheres <em>vs.</em> Meu método Renova*</h2>
             <div class="ba-grid">
                 <div class="ba-col bad r">
                     <p class="ba-col-label">❌ Sem tratamento</p>
@@ -1718,6 +1808,21 @@
         </div>
     </section>
 
+    <section class="section-prova">
+        <p class="section-label">Prova viva</p>
+        <h2>Eu não ensinaria algo que <em>eu mesma não vivi.</em></h2>
+        <p class="subtitle">Wanda passou pelo mesmo que você. O Programa Renova nasceu da sua própria transformação.</p>
+
+        <div class="prova-grid">
+            <img src="assets/prova-1.png" alt="Wanda antes e depois">
+            <img src="assets/prova-2.png" alt="Wanda antes e depois">
+            <img src="assets/prova-3.png" alt="Wanda antes e depois">
+        </div>
+
+        <p class="prova-quote">"Eu sou a prova viva de que é possível renovar o corpo, a energia e a vida."</p>
+        <p class="prova-author">— Wanda, criadora do Programa Renova</p>
+    </section>
+
     <!-- ══ TRANSFORMAÇÃO ══ -->
     <section id="transformacao">
         <div class="inner-narrow">
@@ -1736,7 +1841,7 @@
                 <li><span class="check">✓</span> Humor estável</li>
                 <li><span class="check">✓</span> Sono regulado</li>
             </ul>
-            <a href="#oferta" class="btn r">Renovar minha saúde →</a>
+            <a href="grupo.html" class="btn r">Renovar minha saúde →</a>
         </div>
     </section>
 
@@ -1747,15 +1852,15 @@
             <h2 class="display r d1">O Programa Renova foi<br>criado para tratar <em>a raiz.</em></h2>
             <p class="lead lead-light r d2">Um protocolo estruturado para limpar, restaurar e reativar seu corpo.<br>Sem
                 extremismos. Sem terrorismo alimentar. Sem soluções superficiais.</p>
-            <a href="#oferta" class="btn r d3">Quero transformar meu corpo →</a>
+            <a href="grupo.html" class="btn r d3">Quero transformar meu corpo →</a>
         </div>
     </section>
 
     <!-- ══ O QUE VOCÊ RECEBE ══ -->
     <section id="recebe">
         <div class="inner">
-            <span class="s-label r">Tudo incluso</span>
-            <h2 class="mid r d1">O que você recebe<br>no Programa Renova</h2>
+            <span class="s-label r">GOSTA DE SPOILER?</span>
+            <h2 class="mid r d1">Receba em primeira mão<br>tudo sobre o Programa Renova*</h2>
             <p class="sub r d2">Cada item pensado para um único resultado: o seu.</p>
             <div class="recebe-grid">
                 <div class="recebe-card r">
@@ -1764,37 +1869,37 @@
                     <p class="rc-desc">Protocolo passo a passo da Desparasitação, Detoxificação a Desinflamação. Sem
                         improviso.
                     </p>
-                    <p class="rc-val">Valor: R$ 521</p>
+
                 </div>
                 <div class="recebe-card r d1">
                     <div class="rc-icon">🤝</div>
                     <p class="rc-title">Suporte 1×1</p>
                     <p class="rc-desc">Acompanhamento individualizado durante todo o processo.</p>
-                    <p class="rc-val">Valor: R$ 200</p>
+
                 </div>
                 <div class="recebe-card r d2">
                     <div class="rc-icon">🎙️</div>
                     <p class="rc-title">Ao vivo com Wanda</p>
                     <p class="rc-desc">Tira-dúvidas mensais para ajustar, esclarecer e manter o foco.</p>
-                    <p class="rc-val">Valor: R$ 200</p>
+
                 </div>
                 <div class="recebe-card r">
                     <div class="rc-icon">🧪</div>
                     <p class="rc-title">Orientação terapeuticas para farmácia de manipulados</p>
                     <p class="rc-desc">Guia exclusivo dos compostos funcionais para cada etapa.</p>
-                    <p class="rc-val">Valor: R$ 150</p>
+
                 </div>
                 <div class="recebe-card r d1">
                     <div class="rc-icon">🥗</div>
                     <p class="rc-title">Receitas funcionais</p>
                     <p class="rc-desc">Anti-inflamatórias, gostosas e que trabalham com o corpo.</p>
-                    <p class="rc-val">Valor: R$ 97</p>
+
                 </div>
                 <div class="recebe-card r d2">
                     <div class="rc-icon">📁</div>
                     <p class="rc-title">Monitoramento</p>
                     <p class="rc-desc">Acompanhametno das etapas do programa</p>
-                    <p class="rc-val">Valor: R$ 300</p>
+
                 </div>
             </div>
         </div>
@@ -1808,7 +1913,7 @@
                 <span class="etag">Expert · Wanda</span>
                 <img src="/assets/wanda-expert-2.jpeg" alt="Wanda, criadora do Programa Renova" />
             </div>
-            <h2 class="mid r d2">Um método que nasceu<br>da <em>prática real,</em><br>não da teoria.</h2>
+            <!-- <h2 class="mid r d2">Um método que nasceu<br>da <em>prática real,</em><br>não da teoria.</h2> -->
             <p class="lead r d3" style="color:rgba(255,255,255,.5)">
                 Wanda é Terapeuta Naturopata, especialista em saúde integrativa feminina, foco de desinflamação do
                 corpo. Com abordagem personalizada , Ortomolecular, Suplementação, fitoterapia Avançada criou o Programa
@@ -1894,18 +1999,18 @@
     <section id="oferta" class="bg-ink">
         <!-- ABRIR PÓS A AULA -->
         <div class="inner-narrow">
-            <span class="s-label s-label-light r">Condição exclusiva de lançamento</span>
+            <span class="s-label s-label-light r">Encontro ao vivo dia 26/03</span>
             <h2 class="display r d1">Invista na sua<br><em>renovação de saúde.</em></h2>
             <div class="price-box r d2">
-                <ul class="price-items">
+                <!-- <ul class="price-items">
                     <li><strong>Método completo estruturado</strong> <span class="val">R$ 521</span></li>
                     <li><strong>Suporte 1×1</strong> <span class="val">R$ 200</span></li>
                     <li><strong>Ao vivo mensal com Wanda</strong> <span class="val">R$ 180</span></li>
                     <li><strong>Tabela de manipulados</strong> <span class="val">R$ 150</span></li>
                     <li><strong>Receitas funcionais</strong> <span class="val">R$ 97</span></li>
                     <li><strong>Monitoramento</strong> <span class="val">R$ 300</span></li>
-                </ul>
-                
+                </ul> -->
+
                 <!-- <div class="price-total">
                     <p class="price-urgency">⚡ Oferta especial para as 10 primeiras vagas R$ 395,00 — após isso o valor
                         volta a R$
@@ -1931,23 +2036,22 @@
                         →</a>
                 </div>
             </div>
-            <p class="oferta-note r">Condição válida apenas para os 10 primeiros. Após o lançamento, o valor aumenta.
-            </p>
+
         </div>
     </section>
 
     <!-- ══ URGÊNCIA ══ -->
-    <section id="urgencia">
+    <!-- <section id="urgencia">
         <div class="inner-narrow" style="position:relative;z-index:2;">
-            <h2 class="r">É sério, essa oferta<br>não vai <em>durar.</em></h2>
+            <h2 class="r">É sério, o acesso gratuido para o grupo<br>não vai <em>durar.</em></h2>
             <p class="r d1">Ou você continua exausta, inchada, sem energia —<br>ou você decide renovar agora.<br>A
                 decisão é só sua.</p>
             <a href="#oferta" class="btn btn-white r d2">Quero transformar meu corpo →</a>
         </div>
-    </section>
+    </section> -->
 
     <!-- ══ GARANTIA ══ -->
-    <section id="garantia">
+    <!-- <section id="garantia">
         <div class="inner-narrow">
             <span class="s-label r">Sem risco</span>
             <div class="garantia-inner r d1">
@@ -1962,10 +2066,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ══ FAQ ══ -->
-    <section id="faq">
+    <!-- <section id="faq">
         <div class="inner-mid">
             <span class="s-label r">Dúvidas frequentes</span>
             <h2 class="mid r d1">Ainda tem dúvidas?</h2>
@@ -2014,14 +2118,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ══ FECHAMENTO ══ -->
     <section id="fechamento">
         <div class="inner-narrow">
             <h2 class="r">Seu corpo não está<br>contra você.<br><em>Ele está pedindo ajuda.</em></h2>
             <p class="r d1">E agora você sabe o que ele precisa.</p>
-            <a href="#oferta" class="btn r d2">Quero começar minha renovação de saúde. →</a>
+            <a href="grupo.html" class="btn r d2">Quero começar minha renovação de saúde. →</a>
         </div>
     </section>
 
