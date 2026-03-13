@@ -920,6 +920,187 @@
             color: var(--orange);
         }
 
+ /* A JORNADA DO PROGRAMA RENOVA_____________ */
+ .section-jornada {
+    padding: 40px 20px;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    background: transparent; 
+    color: #000000; 
+}
+
+.section-jornada .section-label {
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgb(3, 8, 49);
+    margin-bottom: 16px;
+}
+
+.section-jornada h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 48px;
+}
+
+.section-jornada h2 em {
+    color: #c9a96e;
+}
+
+.jornada-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.jornada-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.jornada-step:last-child {
+    padding-bottom: 0;
+}
+
+.step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.step-number {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,169,110,.4);
+    background: rgba(201,169,110,.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.1rem;
+    color: #19043f;
+    flex-shrink: 0;
+}
+
+.step-line {
+    width: 1px;
+    flex: 1;
+    min-height: 40px;
+    background: rgba(201,169,110,.2);
+    margin-top: 8px;
+}
+
+.jornada-step:last-child .step-line {
+    display: none;
+}
+
+.step-content {
+    padding-top: 10px;
+}
+
+.step-tag {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgb(4, 3, 44);
+    margin-bottom: 6px;
+}
+
+.step-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.3rem;
+    color: #c9a96e;
+    margin-bottom: 8px;
+}
+
+.step-desc {
+    font-size: .9rem;
+    color: rgb(1, 1, 20);
+    line-height: 1.65;
+}
+
+
+/*PROVA REAL AVATAR - WANDA=============================================*/
+        .section-prova {
+            padding: 1px 20px;
+            /* 👈 menos espaço */
+            text-align: center;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .section-prova .section-label {
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .35);
+            margin-bottom: 16px;
+        }
+
+        .section-prova h2 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .section-prova h2 em {
+            color: #c9a96e;
+        }
+
+        .section-prova .subtitle {
+            font-size: .93rem;
+            color: rgba(255, 255, 255, .5);
+            margin-bottom: -15px;
+            line-height: 1.7;
+        }
+
+        .prova-grid {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .prova-grid img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: contain;
+            aspect-ratio: 3/4;
+            /* 👈 paisagem, combina com 1350x1080 */
+            min-height: 220px;
+        }
+
+        .prova-quote {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: rgb(11, 3, 53);
+            line-height: 1.6;
+        }
+
+        .prova-author {
+            font-size: .8rem;
+            color: rgba(255, 255, 255, .3);
+            margin-top: 0px;
+        }
+
+
+
         /* ══════════════════════════════════════
    EXPERT
 ══════════════════════════════════════ */
@@ -1574,6 +1755,18 @@
                 padding: 36px 24px;
             }
         }
+        @media (min-width: 768px) {
+            .prova-grid {
+                gap: 4px;
+                /* 👈 bem coladas no desktop */
+                flex-wrap: nowrap;
+                /* 👈 força ficar na mesma linha */
+            }
+
+            .prova-grid img {
+                width: 31%;
+            }
+        }
     </style>
 </head>
 
@@ -1718,6 +1911,22 @@
         </div>
     </section>
 
+    <!-- AVATAR TRANSFORMADO "WANDA DEPOIS" -->
+     <section class="section-prova">
+        <p class="section-label">Prova viva</p>
+        <h2>Eu não ensinaria algo que <em>eu mesma não vivi.</em></h2>
+        <p class="subtitle">Wanda passou pelo mesmo que você. O Programa Renova nasceu da sua própria transformação.</p>
+
+        <div class="prova-grid">
+            <img src="assets/prova-1.png" alt="Wanda antes e depois">
+            <img src="assets/prova-2.png" alt="Wanda antes e depois">
+            <img src="assets/prova-3+.jpg" alt="Wanda antes e depois">
+        </div>
+
+        <p class="prova-quote">"Eu sou a prova viva de que é possível <em>renovar</em> o corpo, a energia e a vida."</p>
+        <p class="prova-author">— Wanda, criadora do Programa Renova</p>
+    </section>
+
     <!-- ══ TRANSFORMAÇÃO ══ -->
     <section id="transformacao">
         <div class="inner-narrow">
@@ -1744,7 +1953,7 @@
     <section id="promessa">
         <div class="inner-narrow" style="position:relative;z-index:2;">
             <span class="s-label s-label-light r">A raiz do problema</span>
-            <h2 class="display r d1">O Programa Renova foi<br>criado para tratar <em>a raiz.</em></h2>
+            <h2 class="display r d1">O Programa Renova foi<br>criado para tratar <em>a raiz, a causa.</em></h2>
             <p class="lead lead-light r d2">Um protocolo estruturado para limpar, restaurar e reativar seu corpo.<br>Sem
                 extremismos. Sem terrorismo alimentar. Sem soluções superficiais.</p>
             <a href="#oferta" class="btn r d3">Quero transformar meu corpo →</a>
@@ -1799,6 +2008,52 @@
             </div>
         </div>
     </section>
+
+<!-- A JORNADA DE RENOVAÇÃO________________ -->
+<section class="section-jornada">
+    <p class="section-label">O caminho do programa renova*</p>
+    <h2>Semana a semana, <em>seu corpo se transforma.</em></h2>
+
+    <div class="jornada-steps">
+
+        <div class="jornada-step">
+            <div class="step-left">
+                <div class="step-number">1</div>
+                <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+                <p class="step-tag">Semana 1–2</p>
+                <p class="step-title">O Despertar</p>
+                <p class="step-desc">O corpo volta a respirar. Inchaço e névoa mental começam a ceder.</p>
+            </div>
+        </div>
+
+        <div class="jornada-step">
+            <div class="step-left">
+                <div class="step-number">2</div>
+                <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+                <p class="step-tag">Semana 3–6</p>
+                <p class="step-title">A Limpeza Profunda</p>
+                <p class="step-desc">A raiz é tratada. Desparasitação e detox no nível celular.</p>
+            </div>
+        </div>
+
+        <div class="jornada-step">
+            <div class="step-left">
+                <div class="step-number">3</div>
+                <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+                <p class="step-tag">Semana 7–8</p>
+                <p class="step-title">A Consolidação</p>
+                <p class="step-desc">Metabolismo reativado. Imunidade blindada. Transformação real.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- ══ EXPERT ══ -->
     <section id="expert">
@@ -1876,6 +2131,20 @@
                             <p class="t-name">Meire Lima</p>
                         </div>
                     </div>
+                    <div class="t-card">
+                        <img class="t-card-img" src="/assets/9-ana-carolina.PNG" alt="Ana Carolina">
+                        <div class="t-card-footer">
+                            <div class="t-stars">★★★★★</div>
+                            <p class="t-name">Ana Carolina</p>
+                        </div>
+                    </div>
+                    <div class="t-card">
+                        <img class="t-card-img" src="/assets/10-fabiola.jpeg" alt="Fabiola">
+                        <div class="t-card-footer">
+                            <div class="t-stars">★★★★★</div>
+                            <p class="t-name">Fabiola</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="slider-controls">
@@ -1906,7 +2175,7 @@
                     <li><strong>Monitoramento</strong> <span class="val">R$ 300</span></li>
                 </ul>
                 
-                <!-- <div class="price-total">
+                <div class="price-total">
                     <p class="price-urgency">⚡ Oferta especial para as 10 primeiras vagas R$ 395,00 — após isso o valor
                         volta a R$
                         1.448,00</p>
@@ -1916,20 +2185,9 @@
                     <p class="price-parcel">ou 10× de R$ 47,47 no cartão </p>
                     <a href="https://pay.hotmart.com/P93116367D" class="btn" target="_blank"
                         style="display:block;text-align:center;">Quero garantir minha transformação →</a>
-                </div> -->
-                <!-- CTA GRUPO - REMOVER APÓS AULA AO VIVO -->
-                <div class="price-total" style="text-align:center;">
-                    <p
-                        style="font-family:'Instrument Serif',serif; font-size:1.8rem; font-weight:400; margin-bottom:16px; line-height:1.3; color:#f0ece4;">
-                        Você já sabe o que está te travando.<br>
-                        <em style="color:#c9a96e;">O próximo passo é simples.</em>
-                    </p>
-                    <p style="font-size:.93rem; color:rgba(255,255,255,.55); margin-bottom:28px; line-height:1.7;">
-                        Entre no grupo gratuito e deixa a gente te mostrar o caminho.
-                    </p>
-                    <a href="grupo.html" class="btn" style="display:block;text-align:center;">Quero dar o primeiro passo
-                        →</a>
                 </div>
+                <!-- CTA GRUPO - REMOVER APÓS AULA AO VIVO -->
+                
             </div>
             <p class="oferta-note r">Condição válida apenas para os 10 primeiros. Após o lançamento, o valor aumenta.
             </p>
